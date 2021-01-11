@@ -1,0 +1,63 @@
+name: CHATS_Vendor
+description: A new Flutter project.
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  shared_preferences: ^0.5.8
+  json_annotation: ^3.0.1
+  font_awesome_flutter: ^8.8.1
+  provider: ^4.1.2
+
+  build_runner: ^1.7.3
+  json_serializable: ^3.3.0
+
+  date_format: ^1.0.8
+  carousel_slider: ^2.3.1
+  flutter_spinkit: ^4.1.2+1
+  flutter_barcode_scanner: ^1.0.1
+
+  get_it: ^4.0.2
+  image_picker: ^0.6.7+4
+
+  cupertino_icons: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - icons/
+    - images/
+    - assets/
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: Gilroy-bold
+      fonts:
+        - asset: fonts/Gilroy-ExtraBold.ttf
+        # - asset: fonts/Gilroy-Light.ttf
+    #         style: italic
+    - family: Gilroy-medium
+      fonts:
+        - asset: fonts/Gilroy-Medium.ttf
+        # - asset: fonts/Gilroy-Light.ttf
+    #         style: italic
+    - family: Gilroy-Regular
+      fonts:
+        - asset: fonts/Gilroy-Light.ttf
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
