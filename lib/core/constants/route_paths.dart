@@ -1,0 +1,33 @@
+class Routes {
+  static const String homeView = "/";
+  static const String acceptPaymentsView = "acceptPaymentsView";
+  static const String cardAndPaymentView = "cardAndPaymentView";
+  static const String accountSettingsView = "accountSettingsView";
+  static const String profileSettingsView = "profileSettingsView";
+  static const String profileView = "profileView";
+  static const String scanCodeView = "scanCode";
+  static const String securityView = "securityView";
+  static const String supportView = "supportView";
+  static const String transactionView = "transactionView";
+  static const String walletView = "walletView";
+  static const String splashScreen = "splash";
+  static const String onboardingScreen = 'onboard';
+  static const String loginScreen = 'login';
+  static const String signUpScreen = 'signUp';
+  static const String paymentSummary = 'paymentSummary';
+  static const String paymentQRCode = 'paymentQRCode';
+  static const String paymentCreate = 'paymentCreate';
+  static const String personalInfo = 'personalInfo';
+  static const String account = 'account';
+  static const String kycStatus = 'kycStatus';
+  static const String security = 'security';
+  static const String mySettings = 'settings';
+  static const String helpSupport = 'helpSupport';
+  static const String changePassword = 'changePassword';
+  static const String resetPassword = 'resetPassword';
+  static const String setPIN = 'setPin';
+  static const String changePIN = 'changePin';
+  static const String verifySMSView = 'verifySMSView';
+  static const String paymentConfirmation = 'paymentConfirmation';
+  static const String myCampaigns = 'myCampaigns';
+}
