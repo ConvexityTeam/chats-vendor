@@ -1,0 +1,23 @@
+slidy: '1'
+variables:
+  customMessage: "Complete"
+
+scripts:
+  build: flutter pub run build_runner build --delete-conflicting-outputs
+  watch: flutter pub run build_runner watch --delete-conflicting-outputs
+  build_staging_bundle: flutter build appbundle --release --dart-define BUILD_ENV=staging --dart-define BASE_URL=https://staging-api.chats.cash/v1/ --no-sound-null-safety -v
+  build_prod_bundle: flutter build appbundle --release --dart-define BUILD_ENV=production --dart-define BASE_URL=https://api.chats.cash/v1/ --no-sound-null-safety -v
+  clean:
+    name: "Clean"
+    description: "Cleans project, deletes build folders and installed packages"
+    run: flutter clean
+
+  run_dev:
+    name: "RunDev"
+    description: "Runs the project in local development emulator"
+    steps:
+      - name: "StartEmulator"
+        run: flutter emulators --launch 'flutter_sim'
+
+      - name: "RunProject"
+        run: flutter run -t lib/main.dart --debug -v --flavor development
